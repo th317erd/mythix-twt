@@ -1,0 +1,40 @@
+{
+  "name": "mythix-twt",
+  "version": "1.0.0",
+  "description": "mythix-twt",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --trace-warnings ./node_modules/.bin/jasmine",
+    "test-fast": "node --trace-warnings ./node_modules/.bin/jasmine --fail-fast",
+    "test-debug": "node --trace-warnings --inspect-brk ./node_modules/.bin/jasmine",
+    "test-watch": "watch 'clear ; node --trace-warnings ./node_modules/.bin/jasmine' . --wait=4 --interval=1",
+    "coverage": "clear ; node ./node_modules/.bin/nyc ./node_modules/.bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/th317erd/mythix-twt.git"
+  },
+  "keywords": [ "pwt", "jwt", "token", "web token", "security", "users", "sessions", "session" ],
+  "author": "Wyatt Greenway",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/th317erd/mythix-twt/issues"
+  },
+  "homepage": "https://github.com/th317erd/mythix-twt#readme",
+  "devDependencies": {
+    "@spothero/eslint-plugin-spothero": "github:spothero/eslint-plugin-spothero",
+    "eslint": "^8.26.0",
+    "jasmine": "^4.4.0",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "spec/**"
+    ]
+  }
+}
