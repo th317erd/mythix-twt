@@ -1,6 +1,6 @@
 {
   "name": "mythix-twt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mythix-twt",
   "main": "lib/index.js",
   "type": "commonjs",
@@ -15,7 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/th317erd/mythix-twt.git"
   },
-  "keywords": [ "pwt", "jwt", "token", "web token", "security", "users", "sessions", "session" ],
+  "keywords": [
+    "pwt",
+    "jwt",
+    "token",
+    "web token",
+    "security",
+    "users",
+    "sessions",
+    "session"
+  ],
   "author": "Wyatt Greenway",
   "license": "MIT",
   "bugs": {
